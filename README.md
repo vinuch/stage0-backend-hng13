@@ -1,7 +1,7 @@
-
-
-````markdown
 # Stage0-Profile API
+
+
+
 
 A simple Rust API built with [Axum](https://docs.rs/axum/).
 
@@ -40,7 +40,6 @@ tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
 ## Environment Variables
 
 No environment variables are required for basic local running.
-If you add configuration later (like database URLs or API keys), set them in a `.env` file or in your shell.
 
 ---
 
@@ -69,10 +68,10 @@ cargo run
 
 4. The API will listen on **`localhost:3000`** by default.
 
-5. Test an endpoint:
+5. Test the endpoint:
 
 ```bash
-curl http://localhost:3000/me
+curl http://localhost:3000/me 
 ```
 
 ---
@@ -84,9 +83,4 @@ docker build -t axum-api .
 docker run -p 3000:3000 axum-api
 ```
 
-```
 
-This is clean, Markdown-ready, and should render perfectly on GitHub.  
-
-If you want, I can also **add a section specifically for AWS Fargate deployment instructions** so your README covers both local and cloud usage. Do you want me to do that?
-```
